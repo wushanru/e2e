@@ -1,5 +1,13 @@
 # e2e
 
+## 0.23.2
+
+### Patch Changes
+
+- [#1785](https://github.com/e2e-inc/e2e/pull/1785) [`ceaea64`](https://github.com/e2e-inc/e2e/commit/ceaea64ceead09d0a0f8cb5b384ef0d9ffac23a1) Thanks [@okwasniewski](https://github.com/okwasniewski)! - Bump playwright-core to 1.65.1 and `@ai-sdk/provider` to 4.0.38. Smol sandboxes use the Playwright 1.65.1 image.
+
+- [#1799](https://github.com/e2e-inc/e2e/pull/1799) [`cfa2aa0`](https://github.com/e2e-inc/e2e/commit/cfa2aa0ecc77751fe56e4fbb8c938677cfa7ec01) Thanks [@samanyudas](https://github.com/samanyudas)! - Workers no longer die about 1 ms after a stop request when a grace budget built from `timeout` and `cleanupTimeout` is longer than 2^31-1 milliseconds. Ctrl-C now runs `afterEach` and disposes the engine with `timeout` near that limit, and engine disposal at the end of a run or on a second Ctrl-C finishes with `cleanupTimeout` near it.
+
 ## 0.23.1
 
 ### Patch Changes
